@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+}
+
+.flex-container {
+  margin: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* align item horizontally */
+  align-items: center; /* align item vertically - NOT working. Have had to add a media query to align the card roughly in center of screen for desktop */
+}
+
+.card {
+  width: 350px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 14px;
+  padding-top: 24px;
+  -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.cube {
+  width: 302px;
+  height: 302px;
+  border-radius: 7px;
+  background: url(../images/image-equilibrium.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cube:hover {
+  background-image: url(../images/image-equilibrium-hover.jpg);
+  cursor: pointer;
+}
+
+.content {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 0 24px;
+}
+
+h1,
+p {
+  font-family: "Outfit", sans-serif;
+}
+
+h1 {
+  font-size: 21px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  padding-top: 30px;
+  /* NOTE: need to fix left alignment of text */
+}
+
+.about {
+  font-size: 18px;
+  padding: 28px 0;
+}
+
+.artist {
+  padding: 26px 0;
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 43px;
+}
+
+.about,
+.artist {
+  font-weight: 300;
+  color: hsl(215, 34%, 52%);
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 28px;
+}
+
+.eth {
+  font-weight: 600;
+  color: hsl(178, 100%, 50%);
+}
+
+.time {
+  font-weight: 300;
+  color: hsl(215, 34%, 52%);
+}
+
+.fa-ethereum,
+.fa-clock {
+  padding-right: 7px;
+}
+
+.line {
+  width: 100%;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.artist img {
+  width: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 0 20px;
+}
+
+.name {
+  color: hsl(0, 0%, 100%);
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+a:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.attribution {
+  display: flex;
+  padding-top: 30px;
+  color: whitesmoke;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 480px) {
+  .flex-container {
+    margin: 30px;
+  }
+}
