@@ -131,10 +131,9 @@ a:hover {
 
 .attribution {
   display: flex;
-  padding-top: 30px;
-  color: whitesmoke;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
   font-size: 11px;
-  text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
