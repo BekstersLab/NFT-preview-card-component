@@ -26,8 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My Solution](https://beksterslab.github.io/...................../)
-<!-- Make sure to update above link -->
+- Solution URL: [My Solution](https://beksterslab.github.io/NFT-preview-card-component/)
 
 ## My process
 
